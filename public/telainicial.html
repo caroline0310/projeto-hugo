@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Academia - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Loja de Academia</h1>
+        <nav>
+            <button onclick="mostrarSecao('feminino')">Roupas Femininas</button>
+            <button onclick="mostrarSecao('masculino')">Roupas Masculinas</button>
+            <button onclick="mostrarSecao('calcado')">Calçados</button>
+            <button onclick="mostrarSecao('suplemento')">Suplementos</button>
+            <button onclick="mostrarSecao('plano')">Planos de Treino</button>
+        <ul>
+            <li><a href="telainicial.html">Início & Loja</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+
+        </nav>
+    </header>
+
+    <!-- Roupas Femininas -->
+    <div class="secao" id="feminino">
+        <h3>Roupas Femininas</h3>
+        <div class="produtos-linha">
+            <div class="produto"><img src="roupafeminina1.png" alt="">
+                <p>Top Fitness - R$50</p>
+                <button class="btn-add-carrinho" data-nome="top" data-preco="50.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupafeminina2.png" alt="">
+                <p>Legging Compressão - R$120</p>
+                <button class="btn-add-carrinho" data-nome="legging" data-preco="120.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupafeminina3.jpg" alt="">
+                <p>Regata DryFit - R$70</p>
+                <button class="btn-add-carrinho" data-nome="regata" data-preco="70.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="produtos-linha">
+            <div class="produto"><img src="roupafeminina4.webp" alt="">
+                <p>Short Saia Fitness - R$90</p>
+                <button class="btn-add-carrinho" data-nome="short" data-preco="90.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupafeminina5.png" alt="">
+                <p>Jaqueta Corta Vento - R$150</p>
+                <button class="btn-add-carrinho" data-nome="jaqueta" data-preco="150.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roupas Masculinas -->
+    <div class="secao" id="masculino" style="display:none;">
+        <h3>Roupas Masculinas</h3>
+        <div class="produtos-linha">
+            <div class="produto"><img src="roupamasculina1.jpg" alt="">
+                <p>Regata Cavada - R$60</p>
+                <button class="btn-add-carrinho" data-nome="regata_masc" data-preco="60.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupamasculina2.jpeg" alt="">
+                <p>Bermuda Moletom - R$110</p>
+                <button class="btn-add-carrinho" data-nome="bermuda" data-preco="110.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupamasculina3.jpg" alt="">
+                <p>Camiseta DryFit - R$80</p>
+                <button class="btn-add-carrinho" data-nome="camiseta" data-preco="80.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="produtos-linha">
+            <div class="produto"><img src="roupamasculina4.jpg" alt="">
+                <p>Calça Jogger - R$130</p>
+                <button class="btn-add-carrinho" data-nome="calca" data-preco="130.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="roupamasculina5.webp" alt="">
+                <p>Moletom Canguru - R$180</p>
+                <button class="btn-add-carrinho" data-nome="moletom" data-preco="180.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calçados -->
+    <div class="secao" id="calcado" style="display:none;">
+        <h3>Calçados</h3>
+        <div class="produtos-linha">
+            <div class="produto"><img src="calcado1.jpg" alt="">
+                <p>Tênis Training - R$299</p>
+                <button class="btn-add-carrinho" data-nome="calcado1" data-preco="299.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="calcado2.jpg" alt="">
+                <p>Tênis Running - R$320</p>
+                <button class="btn-add-carrinho" data-nome="calcado2" data-preco="320.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="calcado3.jpg" alt="">
+                <p>Tênis CrossFit - R$280</p>
+                <button class="btn-add-carrinho" data-nome="calcado3" data-preco="280.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="produtos-linha">
+            <div class="produto"><img src="calcado4.jpg" alt="">
+                <p>Sapatilha Lifting - R$210</p>
+                <button class="btn-add-carrinho" data-nome="calcado4" data-preco="210.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="calcado5.jpg" alt="">
+                <p>Chinelo Pós-Treino - R$60</p>
+                <button class="btn-add-carrinho" data-nome="calcado5" data-preco="60.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suplementos -->
+    <div class="secao" id="suplemento" style="display:none;">
+        <h3>Suplementos</h3>
+        <div class="produtos-linha">
+            <div class="produto"><img src="suplemento1.webp" alt="">
+                <p>Whey Protein - R$250</p>
+                <button class="btn-add-carrinho" data-nome="whey" data-preco="250.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="suplemento2.webp" alt="">
+                <p>Creatina - R$120</p>
+                <button class="btn-add-carrinho" data-nome="creatina" data-preco="120.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="suplemento3.jpg" alt="">
+                <p>Pré-Treino - R$150</p>
+                <button class="btn-add-carrinho" data-nome="pretreino" data-preco="150.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="produtos-linha">
+            <div class="produto"><img src="suplemento4.webp" alt="">
+                <p>Glutamina - R$100</p>
+                <button class="btn-add-carrinho" data-nome="glutamina" data-preco="100.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="suplemento5.webp" alt="">
+                <p>BCAA - R$90</p>
+                <button class="btn-add-carrinho" data-nome="bcaa" data-preco="90.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planos de Treino -->
+    <div class="secao" id="plano" style="display:none;">
+        <h3>Planos de Treino</h3>
+        <div class="produtos-linha">
+            <div class="produto"><img src="plano1.jpg" alt="">
+                <p>Plano Iniciante - R$99</p>
+                <button class="btn-add-carrinho" data-nome="iniciante" data-preco="99.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="plano2.jpg" alt="">
+                <p>Plano Intermediário - R$149</p>
+                <button class="btn-add-carrinho" data-nome="intermediario" data-preco="149.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="plano3.png" alt="">
+                <p>Plano Avançado - R$199</p>
+                <button class="btn-add-carrinho" data-nome="avancado" data-preco="199.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="produtos-linha">
+            <div class="produto"><img src="plano4.jpg" alt="">
+                <p>Plano Personalizado - R$299</p>
+                <button class="btn-add-carrinho" data-nome="personalizado" data-preco="299.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto"><img src="plano5.jpg" alt="">
+                <p>Consultoria Online - R$199</p>
+                <button class="btn-add-carrinho" data-nome="consultoria" data-preco="199.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="telainicial.js"></script>
+</body>
+
+</html>
